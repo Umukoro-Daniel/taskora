@@ -28,6 +28,10 @@ const dueDate = document.getElementById("dueDate");
 // empty message
 const emptyMsg = document.getElementById("emptyMessage");
 
+//for footer year
+const year = document.getElementById("year");
+year.textContent = new Date().getFullYear();
+
 
 // tasks storage
 let tasks = [];
