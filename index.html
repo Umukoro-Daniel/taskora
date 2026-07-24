@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--logo-->
+    <link rel="icon" href="images/taskora 2.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="contain">
+        <h1>Taskora</h1>
+        <div class="update-task">
+            <p id="total-task">Total Tasks: 0</p>
+            <p id="com-task">Completed Tasks: 0</p>
+            <p id="rem-task">Remaining Tasks: 0</p>
+        </div>
+        <!--filter-->
+        <div class="filter-section">
+            <button id="filAll">All</button>
+            <button id="filCom">Completed</button>
+            <button id="filRem">Remaining</button>
+        </div>
+
+        <!--sort-->
+        <label for="sort">Sort by Priority:</label>
+        <select id="sort">
+            <option value="high-low">High → Low</option>
+            <option value="low-high">Low → High</option>
+        </select>
+
+        <!--Search input-->
+        <label for="searchInput">Search</label>
+        <input type="text" placeholder="Search" id="searchInput">
+            <!--create tasks-->
+        <label for="todoInput">Create a To Do List</label>
+        <input type="text" class="conIn" placeholder="Enter a task" id="todoInput">
+
+        <!--Priority-->
+        <label for="priority">Priority</label>
+        <select id="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <!--Due date-->
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate">
+
+        <!--create tasks-->
+        <button class="btn">Create</button>
+        <div class="displayToDo">
+            <p id="emptyMessage">No tasks yet. Create your first task!</p>
+        </div>
+        <button id="clearBtn">Clear All</button>
+        <!--footer-->
+
+        <footer>
+            <p>© 2026 Taskora | Built by Dani Graft</p>
+        </footer>
+
+    </main>
+
+    <!--Javascript-->
+    <script src="index.js" defer></script>
+</body>
+</html>
